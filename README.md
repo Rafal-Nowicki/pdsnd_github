@@ -20,7 +20,11 @@ python udacity_project_script.py
 ```
 
 ### Files used
-Include the files used
+To run the script successfully you need three files:
+ - chicago.csv
+ - washington.csv
+ - new_york_city.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+You can check how to write nice README files for data science projects [here](https://github.com/sfbrigade/data-science-wg/blob/master/dswg_project_resources/Project-README-template.md#project-introobjective).
