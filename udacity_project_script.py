@@ -82,8 +82,7 @@ def load_data(city, month, day):
 
     day_dict = {"Mon":0, "Tue":1, "Wed":2, "Thu":3, "Fry":4, "Sat":5, "Sun":6}
 
-    month_dict = {"Jan":1, "Feb":2, "Mar":3, "Apr":4, "May":5, "Jun":6, "Jul":7,
-                  "Aug":8, "Sep":9, "Oct":10, "Nov":11, "Dec":12}
+    month_dict = {"Jan":1, "Feb":2, "Mar":3, "Apr":4, "May":5, "Jun":6}
 
     if month == 'all_months' and day != 'all_days': # filter just by day
         day = day_dict.get(day)
