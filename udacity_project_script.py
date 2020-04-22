@@ -76,14 +76,13 @@ def load_data(city, month, day):
     data['Start Time'] =  pd.to_datetime(data['Start Time'], format='%Y-%m-%d %H:%M:%S')
     data['End Time'] =  pd.to_datetime(data['End Time'], format='%Y-%m-%d %H:%M:%S')
 
-    data['weekday'] = data['Start Time'].dt.dayofweek #0 - mon
-    data['month'] = data['Start Time'].dt.month #1 - jan
-    data['hour'] = data['Start Time'].dt.hour
+    data['weekday'] = data['Start Time'].dt.dayofweek #0 - monday
+    data['month'] = data['Start Time'].dt.month #1 - january
+    data['hour'] = data['Start Time'].dt.hour # 1 - hour 1
 
     day_dict = {"Mon":0, "Tue":1, "Wed":2, "Thu":3, "Fry":4, "Sat":5, "Sun":6}
 
-    month_dict = {"Jan":1, "Feb":2, "Mar":3, "Apr":4, "May":5, "Jun":6, "Jul":7,
-                  "Aug":8, "Sep":9, "Oct":10, "Nov":11, "Dec":12}
+    month_dict = {"Jan":1, "Feb":2, "Mar":3, "Apr":4, "May":5, "Jun":6}
 
     if month == 'all_months' and day != 'all_days': # filter just by day
         day = day_dict.get(day)
@@ -282,10 +281,12 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+
         if city == 'washington':
             show_entries_washington(df)
         else:
             show_entries(df)
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
