@@ -8,7 +8,7 @@ This project aims to build an interactive tool for analyzing data on bikeshare i
 
 Data used in the project is a wrangled sample provided by udacity and originally comes from following sources: [Chicago](https://www.divvybikes.com/system-data), [Washington](https://www.capitalbikeshare.com/system-data) and [NYC](https://www.citibikenyc.com/system-data).
 
-The tool was built in Python using three libraries:
+The tool was built in Python 3.7.7 using three libraries:
 - Pandas
 - time
 - calednar
