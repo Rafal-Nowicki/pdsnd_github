@@ -1,6 +1,6 @@
 ##### 22.04.2020
 
-## US Bikeshare data exploration
+## US Bikeshare data exploration :bicyclist: :bicyclist: :bicyclist:
 This project is a part of **udacity** [nanodegree course in data science](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104). Check their site for cool content!
 
 ### Description
